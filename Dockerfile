@@ -1,5 +1,4 @@
-#FROM arm32v7/node:15
-FROM node:15
+FROM arm32v7/node:15
 
 # Create app directory
 WORKDIR /usr/src/app
