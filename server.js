@@ -12,7 +12,7 @@ catRepo.createTable();
 
 // Constants
 const PORT = 8080;
-const HOST = '127.0.0.1';
+const HOST = '0.0.0.0';
 
 // App
 const app = express();
@@ -33,5 +33,6 @@ app.post('/new', (req, res) => {
 	res.sendStatus(200);
 });
 
-app.listen(PORT, HOST);
+//app.listen(PORT, HOST);
+app.listen(PORT);
 console.log(`Running on http://${HOST}:${PORT}`);
